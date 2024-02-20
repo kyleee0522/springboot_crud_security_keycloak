@@ -7,7 +7,7 @@ spring:
   application:
     name: edu-spring-data-jdbc
   profiles:
-    active: local
+    active: prd
   banner:
     location: "classpath:banner.txt"
 # cache 사용을 위해 cache name 설정
@@ -25,7 +25,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://211.252.87.34:40007/realms/employee-services # http://211.252.87.34:40007/realms/employee-services #http://211.252.87.34:40007/realms/company-services  # http://211.252.87.34:40007/realms/company-services
+          issuer-uri: http://211.43.12.162:30298/realms/employee-services # http://211.252.87.34:40007/realms/employee-services #http://211.252.87.34:40007/realms/company-services  # http://211.252.87.34:40007/realms/company-services
 
 jwt:
   auth:
@@ -37,7 +37,7 @@ app:
   # cors:
   #  allowed-origins: http://localhost:3000
   keycloak:
-    server : http://211.252.87.34:40007 # http://211.252.87.34:40007
+    server : http://211.43.12.162:30298 # http://211.252.87.34:40007
   #  keycloak:
   #    auth-server-url: ${KEYCLOAK_SERVER_URL:http://localhost:8080/auth}
   #    realm: ${KEYCLOAK_REALM:spring-boot-blueprint}

@@ -1,227 +1,140 @@
-SPRINGBOOT_SECURITY 21:01:05.139 INFO  org.hibernate.validator.internal.util.Version : - HV000001: Hibernate Validator 8.0.1.Final 
-SPRINGBOOT_SECURITY 21:01:05.150 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Starting ThirdprojectApplication using Java 17.0.2 with PID 18388 (/Users/jakelee/springboot_crud_security_keycloak/target/classes started by jakelee in /Users/jakelee/springboot_crud_security_keycloak) 
-SPRINGBOOT_SECURITY 21:01:05.150 DEBUG com.kt.edu.thirdproject.ThirdprojectApplication : - Running with Spring Boot v3.2.1, Spring v6.1.2 
-SPRINGBOOT_SECURITY 21:01:05.150 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - The following 1 profile is active: "local" 
-SPRINGBOOT_SECURITY 21:01:05.167 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
-SPRINGBOOT_SECURITY 21:01:05.167 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
-SPRINGBOOT_SECURITY 21:01:05.686 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
-SPRINGBOOT_SECURITY 21:01:05.715 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Finished Spring Data repository scanning in 26 ms. Found 1 JDBC repository interface. 
-SPRINGBOOT_SECURITY 21:01:05.811 INFO  com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor : - Post-processing PropertySource instances 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application-local.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.831 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
-SPRINGBOOT_SECURITY 21:01:05.839 INFO  com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter : - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
-SPRINGBOOT_SECURITY 21:01:05.893 INFO  com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver : - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver 
-SPRINGBOOT_SECURITY 21:01:05.894 INFO  com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector : - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector 
-SPRINGBOOT_SECURITY 21:01:05.971 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat initialized with port 9080 (http) 
-SPRINGBOOT_SECURITY 21:01:05.977 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-9080"] 
-SPRINGBOOT_SECURITY 21:01:05.978 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
-SPRINGBOOT_SECURITY 21:01:05.978 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/10.1.17] 
-SPRINGBOOT_SECURITY 21:01:06.007 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
-SPRINGBOOT_SECURITY 21:01:06.007 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : - Root WebApplicationContext: initialization completed in 840 ms 
-SPRINGBOOT_SECURITY 21:01:06.060 INFO  com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor : - Found Custom Encryptor Bean org.jasypt.encryption.pbe.StandardPBEStringEncryptor@56d4b5d4 with name: jasyptStringEncryptor 
-SPRINGBOOT_SECURITY 21:01:06.080 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Starting... 
-SPRINGBOOT_SECURITY 21:01:06.120 INFO  com.zaxxer.hikari.pool.HikariPool : - hikari-cp - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6b27a9f9 
-SPRINGBOOT_SECURITY 21:01:06.120 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Start completed. 
-SPRINGBOOT_SECURITY 21:01:06.124 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration : - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb' 
-SPRINGBOOT_SECURITY 21:01:06.156 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter init() 
-SPRINGBOOT_SECURITY 21:01:06.220 INFO  jdbc.sqltiming : - create sequence hibernate_sequence\n {executed in 1 msec} 
-SPRINGBOOT_SECURITY 21:01:06.222 INFO  jdbc.sqltiming : - create table employee ( id long not null, empName varchar(255), empDeptName varchar(255), empTelNo varchar(20), empMail varchar(25) )\n {executed in 2 msec} 
-SPRINGBOOT_SECURITY 21:01:06.223 INFO  jdbc.sqltiming : - alter table employee add constraint employee_pk primary key (id)\n {executed in 1 msec} 
-SPRINGBOOT_SECURITY 21:01:06.280 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : - LiveReload server is running on port 35729 
-SPRINGBOOT_SECURITY 21:01:06.400 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : - Exposing 6 endpoint(s) beneath base path '/actuator' 
-SPRINGBOOT_SECURITY 21:01:06.428 DEBUG org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder : - No authenticationProviders and no parentAuthenticationManager defined. Returning null. 
-SPRINGBOOT_SECURITY 21:01:06.523 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4494cd60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7de6a81d, org.springframework.security.web.context.SecurityContextHolderFilter@57e1db47, org.springframework.security.web.header.HeaderWriterFilter@652acc4c, org.springframework.web.filter.CorsFilter@2e0dea6c, org.springframework.security.web.authentication.logout.LogoutFilter@3605d102, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f53cbd3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3f43021e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@675424bd, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@76eb5df3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33fc6000, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@225e5b32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5491afa, org.springframework.security.web.session.SessionManagementFilter@6c0eb65e, org.springframework.security.web.access.ExceptionTranslationFilter@176ae10e, org.springframework.security.web.access.intercept.AuthorizationFilter@6eaa84a2] 
-SPRINGBOOT_SECURITY 21:01:06.672 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-9080"] 
-SPRINGBOOT_SECURITY 21:01:06.679 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat started on port 9080 (http) with context path '' 
-SPRINGBOOT_SECURITY 21:01:06.690 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Started ThirdprojectApplication in 1.676 seconds (process running for 2.195) 
-SPRINGBOOT_SECURITY 21:01:13.487 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring DispatcherServlet 'dispatcherServlet' 
-SPRINGBOOT_SECURITY 21:01:13.487 INFO  org.springframework.web.servlet.DispatcherServlet : - Initializing Servlet 'dispatcherServlet' 
-SPRINGBOOT_SECURITY 21:01:13.489 INFO  org.springframework.web.servlet.DispatcherServlet : - Completed initialization in 2 ms 
-SPRINGBOOT_SECURITY 21:01:13.505 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /api/v1/employee/2 
-SPRINGBOOT_SECURITY 21:01:13.642 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
-SPRINGBOOT_SECURITY 21:01:13.642 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
-SPRINGBOOT_SECURITY 21:01:13.645 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@ab629cbf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_USER, SCOPE_profile]] 
-SPRINGBOOT_SECURITY 21:01:13.656 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /api/v1/employee/2 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/2] LogFilter doFilter Start 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
-SPRINGBOOT_SECURITY 21:01:13.656 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJYR19PcFNOVVlJbmNzeXYyUkc4eHBqWVdfbUFVdUpDSFNKMnpienJpeWZrIn0.eyJleHAiOjE3MDgyNTc2ODYsImlhdCI6MTcwODI1NzM4NiwiYXV0aF90aW1lIjoxNzA4MjU3Mzg1LCJqdGkiOiIzOWZhOTQzZS03OWI5LTRiYTEtYjEzZS1jMzk1OWMxYWQ3NDYiLCJpc3MiOiJodHRwOi8vMjExLjI1Mi44Ny4zNDo0MDAwNy9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiJhMDM2ZDdjMC1hZjkxLTRiYjktYTQyZi0wMzlhNGI4ZjUwNzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiI1MTZkY2FkOC0yOGIyLTRkMWItYTE4Mi1mMzBmMDMzNDJlZmUiLCJzZXNzaW9uX3N0YXRlIjoiY2Q0NWU0ZTgtMmQzNC00MGE2LWE1NDEtNDA2Yzc1OTYyYWY2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImVkdS1hcHAiOnsicm9sZXMiOlsiRURVX1VTRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2Q0NWU0ZTgtMmQzNC00MGE2LWE1NDEtNDA2Yzc1OTYyYWY2IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiTEVFIEhXQU4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJlZHUiLCJnaXZlbl9uYW1lIjoiTEVFIiwiZmFtaWx5X25hbWUiOiJIV0FOIiwiZW1haWwiOiJzaGNsdWJAZ21haWwuY29tIn0.RG8yO6BzwOjusSoIiQa9GeYgzlvPaWDRQM_QhFLaBgkI4DNi_q7UsRoPF1glfz5yxH3PXPzXOTjtS9kmofmUqwRQfBMRXmq-0jK1DedgJEoPAfYuCPiSwvPOVHwhUFwv5zzo6HXnVPrA2DLQsLB3w6O_GCPBuR9jL-JnF1g0jI-LiSNV-hpygG3DLvqdO3MK-J7vO8zqWhg61U6uYH8M5etj6psumQGdMApHHNFL9gqACT2ypQ5_Z3iKUcv31paxH1rC9iZASmHXCdm_4XJUQRe2oFmpsjuazGp0T-CSFBOLWjAoIf5mMB-SbK0yJR_MpiGMQzQ0MJQW0TLL-K_0Vg 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 0 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
-SPRINGBOOT_SECURITY 21:01:13.657 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
-SPRINGBOOT_SECURITY 21:01:13.658 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [] LogFilter doFilter Body 
-SPRINGBOOT_SECURITY 21:01:13.669 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to delete Employee id : 2 
-SPRINGBOOT_SECURITY 21:01:13.707 INFO  jdbc.sqltiming : - SELECT "EMPLOYEE"."ID" AS "ID", "EMPLOYEE"."EMPNAME" AS "EMPNAME", "EMPLOYEE"."EMPMAIL" AS "EMPMAIL", "EMPLOYEE"."EMPTELNO" AS "EMPTELNO", "EMPLOYEE"."EMPDEPTNAME" AS "EMPDEPTNAME" FROM "EMPLOYEE" WHERE "EMPLOYEE"."ID" = 2\n {executed in 1 msec} 
-SPRINGBOOT_SECURITY 21:01:13.710 INFO  jdbc.resultsettable : - \n|---|--------|--------|---------|------------|\n|id |empname |empmail |emptelno |empdeptname |\n|---|--------|--------|---------|------------|\n|---|--------|--------|---------|------------|\n 
-SPRINGBOOT_SECURITY 21:01:13.715 WARN  org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver : - Resolved [com.kt.edu.thirdproject.common.exception.ResourceNotFoundException: Request not exist with id2] 
-SPRINGBOOT_SECURITY 21:01:13.716 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/2] LogFilter doFilter End 
-SPRINGBOOT_SECURITY 21:01:13.735 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /error 
-SPRINGBOOT_SECURITY 21:01:13.736 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /error 
-SPRINGBOOT_SECURITY 21:01:20.860 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /api/v1/employee/2 
-SPRINGBOOT_SECURITY 21:01:20.878 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
-SPRINGBOOT_SECURITY 21:01:20.878 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
-SPRINGBOOT_SECURITY 21:01:20.878 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@ab629cbf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_USER, SCOPE_profile]] 
-SPRINGBOOT_SECURITY 21:01:20.879 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /api/v1/employee/2 
-SPRINGBOOT_SECURITY 21:01:20.879 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/2] LogFilter doFilter Start 
-SPRINGBOOT_SECURITY 21:01:20.879 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
-SPRINGBOOT_SECURITY 21:01:20.879 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
-SPRINGBOOT_SECURITY 21:01:20.880 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJYR19PcFNOVVlJbmNzeXYyUkc4eHBqWVdfbUFVdUpDSFNKMnpienJpeWZrIn0.eyJleHAiOjE3MDgyNTc2ODYsImlhdCI6MTcwODI1NzM4NiwiYXV0aF90aW1lIjoxNzA4MjU3Mzg1LCJqdGkiOiIzOWZhOTQzZS03OWI5LTRiYTEtYjEzZS1jMzk1OWMxYWQ3NDYiLCJpc3MiOiJodHRwOi8vMjExLjI1Mi44Ny4zNDo0MDAwNy9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiJhMDM2ZDdjMC1hZjkxLTRiYjktYTQyZi0wMzlhNGI4ZjUwNzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiI1MTZkY2FkOC0yOGIyLTRkMWItYTE4Mi1mMzBmMDMzNDJlZmUiLCJzZXNzaW9uX3N0YXRlIjoiY2Q0NWU0ZTgtMmQzNC00MGE2LWE1NDEtNDA2Yzc1OTYyYWY2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImVkdS1hcHAiOnsicm9sZXMiOlsiRURVX1VTRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2Q0NWU0ZTgtMmQzNC00MGE2LWE1NDEtNDA2Yzc1OTYyYWY2IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiTEVFIEhXQU4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJlZHUiLCJnaXZlbl9uYW1lIjoiTEVFIiwiZmFtaWx5X25hbWUiOiJIV0FOIiwiZW1haWwiOiJzaGNsdWJAZ21haWwuY29tIn0.RG8yO6BzwOjusSoIiQa9GeYgzlvPaWDRQM_QhFLaBgkI4DNi_q7UsRoPF1glfz5yxH3PXPzXOTjtS9kmofmUqwRQfBMRXmq-0jK1DedgJEoPAfYuCPiSwvPOVHwhUFwv5zzo6HXnVPrA2DLQsLB3w6O_GCPBuR9jL-JnF1g0jI-LiSNV-hpygG3DLvqdO3MK-J7vO8zqWhg61U6uYH8M5etj6psumQGdMApHHNFL9gqACT2ypQ5_Z3iKUcv31paxH1rC9iZASmHXCdm_4XJUQRe2oFmpsjuazGp0T-CSFBOLWjAoIf5mMB-SbK0yJR_MpiGMQzQ0MJQW0TLL-K_0Vg 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 0 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
-SPRINGBOOT_SECURITY 21:01:20.881 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
-SPRINGBOOT_SECURITY 21:01:20.882 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [] LogFilter doFilter Body 
-SPRINGBOOT_SECURITY 21:01:20.882 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to delete Employee id : 2 
-SPRINGBOOT_SECURITY 21:01:20.883 INFO  jdbc.sqltiming : - SELECT "EMPLOYEE"."ID" AS "ID", "EMPLOYEE"."EMPNAME" AS "EMPNAME", "EMPLOYEE"."EMPMAIL" AS "EMPMAIL", "EMPLOYEE"."EMPTELNO" AS "EMPTELNO", "EMPLOYEE"."EMPDEPTNAME" AS "EMPDEPTNAME" FROM "EMPLOYEE" WHERE "EMPLOYEE"."ID" = 2\n {executed in 0 msec} 
-SPRINGBOOT_SECURITY 21:01:20.884 INFO  jdbc.resultsettable : - \n|---|--------|--------|---------|------------|\n|id |empname |empmail |emptelno |empdeptname |\n|---|--------|--------|---------|------------|\n|---|--------|--------|---------|------------|\n 
-SPRINGBOOT_SECURITY 21:01:20.885 WARN  org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver : - Resolved [com.kt.edu.thirdproject.common.exception.ResourceNotFoundException: Request not exist with id2] 
-SPRINGBOOT_SECURITY 21:01:20.885 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/2] LogFilter doFilter End 
-SPRINGBOOT_SECURITY 21:01:20.886 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /error 
-SPRINGBOOT_SECURITY 21:01:20.887 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /error 
-SPRINGBOOT_SECURITY 21:01:26.493 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /api/v1/employees/2 
-SPRINGBOOT_SECURITY 21:01:26.510 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
-SPRINGBOOT_SECURITY 21:01:26.510 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
-SPRINGBOOT_SECURITY 21:01:26.511 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@ab629cbf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_USER, SCOPE_profile]] 
-SPRINGBOOT_SECURITY 21:01:26.512 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /api/v1/employees/2 
-SPRINGBOOT_SECURITY 21:01:26.512 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees/2] LogFilter doFilter Start 
-SPRINGBOOT_SECURITY 21:01:26.512 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
-SPRINGBOOT_SECURITY 21:01:26.512 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
-SPRINGBOOT_SECURITY 21:01:26.512 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
-SPRINGBOOT_SECURITY 21:01:26.512 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
-SPRINGBOOT_SECURITY 21:01:26.512 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
-SPRINGBOOT_SECURITY 21:01:26.512 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJYR19PcFNOVVlJbmNzeXYyUkc4eHBqWVdfbUFVdUpDSFNKMnpienJpeWZrIn0.eyJleHAiOjE3MDgyNTc2ODYsImlhdCI6MTcwODI1NzM4NiwiYXV0aF90aW1lIjoxNzA4MjU3Mzg1LCJqdGkiOiIzOWZhOTQzZS03OWI5LTRiYTEtYjEzZS1jMzk1OWMxYWQ3NDYiLCJpc3MiOiJodHRwOi8vMjExLjI1Mi44Ny4zNDo0MDAwNy9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiJhMDM2ZDdjMC1hZjkxLTRiYjktYTQyZi0wMzlhNGI4ZjUwNzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiI1MTZkY2FkOC0yOGIyLTRkMWItYTE4Mi1mMzBmMDMzNDJlZmUiLCJzZXNzaW9uX3N0YXRlIjoiY2Q0NWU0ZTgtMmQzNC00MGE2LWE1NDEtNDA2Yzc1OTYyYWY2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImVkdS1hcHAiOnsicm9sZXMiOlsiRURVX1VTRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2Q0NWU0ZTgtMmQzNC00MGE2LWE1NDEtNDA2Yzc1OTYyYWY2IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiTEVFIEhXQU4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJlZHUiLCJnaXZlbl9uYW1lIjoiTEVFIiwiZmFtaWx5X25hbWUiOiJIV0FOIiwiZW1haWwiOiJzaGNsdWJAZ21haWwuY29tIn0.RG8yO6BzwOjusSoIiQa9GeYgzlvPaWDRQM_QhFLaBgkI4DNi_q7UsRoPF1glfz5yxH3PXPzXOTjtS9kmofmUqwRQfBMRXmq-0jK1DedgJEoPAfYuCPiSwvPOVHwhUFwv5zzo6HXnVPrA2DLQsLB3w6O_GCPBuR9jL-JnF1g0jI-LiSNV-hpygG3DLvqdO3MK-J7vO8zqWhg61U6uYH8M5etj6psumQGdMApHHNFL9gqACT2ypQ5_Z3iKUcv31paxH1rC9iZASmHXCdm_4XJUQRe2oFmpsjuazGp0T-CSFBOLWjAoIf5mMB-SbK0yJR_MpiGMQzQ0MJQW0TLL-K_0Vg 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-type = application/json 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
-SPRINGBOOT_SECURITY 21:01:26.513 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
-SPRINGBOOT_SECURITY 21:01:26.514 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
-SPRINGBOOT_SECURITY 21:01:26.514 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 69 
-SPRINGBOOT_SECURITY 21:01:26.514 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
-SPRINGBOOT_SECURITY 21:01:26.514 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
-SPRINGBOOT_SECURITY 21:01:26.514 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
-SPRINGBOOT_SECURITY 21:01:26.514 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
-SPRINGBOOT_SECURITY 21:01:26.514 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [{"id":2,"empName":"1","empDeptName":"2","empTelNo":"1","empMail":"1"}] LogFilter doFilter Body 
-SPRINGBOOT_SECURITY 21:01:26.531 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to update Employee : EmployeeEntity(id=2, empName=1, empDeptName=2, empTelNo=1, empMail=1, isNew=false) 
-SPRINGBOOT_SECURITY 21:01:26.532 INFO  jdbc.sqltiming : - SELECT "EMPLOYEE"."ID" AS "ID", "EMPLOYEE"."EMPNAME" AS "EMPNAME", "EMPLOYEE"."EMPMAIL" AS "EMPMAIL", "EMPLOYEE"."EMPTELNO" AS "EMPTELNO", "EMPLOYEE"."EMPDEPTNAME" AS "EMPDEPTNAME" FROM "EMPLOYEE" WHERE "EMPLOYEE"."ID" = 2\n {executed in 0 msec} 
-SPRINGBOOT_SECURITY 21:01:26.533 INFO  jdbc.resultsettable : - \n|---|--------|--------|---------|------------|\n|id |empname |empmail |emptelno |empdeptname |\n|---|--------|--------|---------|------------|\n|---|--------|--------|---------|------------|\n 
-SPRINGBOOT_SECURITY 21:01:26.534 WARN  org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver : - Resolved [com.kt.edu.thirdproject.common.exception.ResourceNotFoundException: Employee not exist with id :2] 
-SPRINGBOOT_SECURITY 21:01:26.534 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees/2] LogFilter doFilter End 
-SPRINGBOOT_SECURITY 21:01:26.536 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /error 
-SPRINGBOOT_SECURITY 21:01:26.536 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /error 
-SPRINGBOOT_SECURITY 21:01:53.643 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /api/v1/employees 
-SPRINGBOOT_SECURITY 21:01:53.661 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
-SPRINGBOOT_SECURITY 21:01:53.661 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
-SPRINGBOOT_SECURITY 21:01:53.661 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@d186359d, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_USER, SCOPE_profile]] 
-SPRINGBOOT_SECURITY 21:02:10.787 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /api/v1/employees 
-SPRINGBOOT_SECURITY 21:02:10.812 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
-SPRINGBOOT_SECURITY 21:02:10.812 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
-SPRINGBOOT_SECURITY 21:02:10.813 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@3ec97f41, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_MANAGER, SCOPE_profile]] 
-SPRINGBOOT_SECURITY 21:02:10.814 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /api/v1/employees 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJYR19PcFNOVVlJbmNzeXYyUkc4eHBqWVdfbUFVdUpDSFNKMnpienJpeWZrIn0.eyJleHAiOjE3MDgyNTgwMjUsImlhdCI6MTcwODI1NzcyNSwiYXV0aF90aW1lIjoxNzA4MjU3NzI1LCJqdGkiOiIwYzM0OTFhNi03MjdhLTQ2M2UtYmUyMS0zMjQ2NWQ4ZjlkNWEiLCJpc3MiOiJodHRwOi8vMjExLjI1Mi44Ny4zNDo0MDAwNy9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiI1NzIyNjM5NS1hN2M4LTRjMzItYTM4ZS1mMTMzM2E2NzA5N2EiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiI1M2JmOWFmNC00YTlkLTRiMWEtOGQxNS04MWU1ZmViZjFjMTgiLCJzZXNzaW9uX3N0YXRlIjoiOGY5ZTc0NjQtOGU0ZC00NGQ3LWI3ZWItMTAxZjZhYTYzZmE5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImVkdS1hcHAiOnsicm9sZXMiOlsiRURVX01BTkFHRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiOGY5ZTc0NjQtOGU0ZC00NGQ3LWI3ZWItMTAxZjZhYTYzZmE5IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiamFrZSBsZWUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJqYWtlIiwiZmFtaWx5X25hbWUiOiJsZWUifQ.dkWFkvL2MrYKK48THjxWa27TvIhwEKYJ_Vsaiy4RIoKskKvYUeguRwkpQ1nfmMS_OyqkvVVyk4O-pLPe6A_-n24NZIOaH7BubRqKpR811IxVQhAkJ1b8cIRb-1OZRwgnjE5eOSsEwVNguC5M5j-rQhfVXK_ASxvQukila0lzxOny1JRS62ISWDgdk8BvPtEZFiFRrDEx_FYhig0MemaytST-G_PbJ_w08XqPOAPLeyj1c5E8OTn_eVpSke16AVCc4M3tYVVYZfkeoraWn0glZ3DZUIt1Url4WttGUCTEOge3OGFA7aBJj4QESJiPnOVtNihrDGivCCLjyvEpWIPfmw 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-type = application/json 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 62 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
-SPRINGBOOT_SECURITY 21:02:10.814 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [{"empName":"1","empDeptName":"1","empTelNo":"1","empMail":"1"}] LogFilter doFilter Body 
-SPRINGBOOT_SECURITY 21:02:10.817 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to create Employee : EmployeeEntity(id=null, empName=1, empDeptName=1, empTelNo=1, empMail=1, isNew=false) 
-SPRINGBOOT_SECURITY 21:02:10.818 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Active Springboot Profile : local 
-SPRINGBOOT_SECURITY 21:02:10.838 INFO  jdbc.sqltiming : - select nextval ('hibernate_sequence');\n {executed in 0 msec} 
-SPRINGBOOT_SECURITY 21:02:10.839 INFO  jdbc.resultsettable : - \n|------------------------------|\n|nextval('hibernate_sequence') |\n|------------------------------|\n|1                             |\n|------------------------------|\n 
-SPRINGBOOT_SECURITY 21:02:10.863 INFO  jdbc.sqltiming : - INSERT INTO "EMPLOYEE" ("EMPDEPTNAME", "EMPMAIL", "EMPNAME", "EMPTELNO", "ID") VALUES ('1', '1', '1', '1', 1)\n {executed in 1 msec} 
-SPRINGBOOT_SECURITY 21:02:10.872 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
-SPRINGBOOT_SECURITY 21:02:13.662 DEBUG org.springframework.security.web.FilterChainProxy : - Securing POST /api/v1/employee/1 
-SPRINGBOOT_SECURITY 21:02:13.679 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
-SPRINGBOOT_SECURITY 21:02:13.679 DEBUG org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider : - Authenticated token 
-SPRINGBOOT_SECURITY 21:02:13.679 DEBUG org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter : - Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@3ec97f41, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_openid, SCOPE_email, ROLE_EDU_MANAGER, SCOPE_profile]] 
-SPRINGBOOT_SECURITY 21:02:13.680 DEBUG org.springframework.security.web.FilterChainProxy : - Secured POST /api/v1/employee/1 
-SPRINGBOOT_SECURITY 21:02:13.680 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/1] LogFilter doFilter Start 
-SPRINGBOOT_SECURITY 21:02:13.680 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJYR19PcFNOVVlJbmNzeXYyUkc4eHBqWVdfbUFVdUpDSFNKMnpienJpeWZrIn0.eyJleHAiOjE3MDgyNTgwMjUsImlhdCI6MTcwODI1NzcyNSwiYXV0aF90aW1lIjoxNzA4MjU3NzI1LCJqdGkiOiIwYzM0OTFhNi03MjdhLTQ2M2UtYmUyMS0zMjQ2NWQ4ZjlkNWEiLCJpc3MiOiJodHRwOi8vMjExLjI1Mi44Ny4zNDo0MDAwNy9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiI1NzIyNjM5NS1hN2M4LTRjMzItYTM4ZS1mMTMzM2E2NzA5N2EiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiI1M2JmOWFmNC00YTlkLTRiMWEtOGQxNS04MWU1ZmViZjFjMTgiLCJzZXNzaW9uX3N0YXRlIjoiOGY5ZTc0NjQtOGU0ZC00NGQ3LWI3ZWItMTAxZjZhYTYzZmE5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjMwMDAiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImVkdS1hcHAiOnsicm9sZXMiOlsiRURVX01BTkFHRVIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiOGY5ZTc0NjQtOGU0ZC00NGQ3LWI3ZWItMTAxZjZhYTYzZmE5IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiamFrZSBsZWUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJqYWtlIiwiZmFtaWx5X25hbWUiOiJsZWUifQ.dkWFkvL2MrYKK48THjxWa27TvIhwEKYJ_Vsaiy4RIoKskKvYUeguRwkpQ1nfmMS_OyqkvVVyk4O-pLPe6A_-n24NZIOaH7BubRqKpR811IxVQhAkJ1b8cIRb-1OZRwgnjE5eOSsEwVNguC5M5j-rQhfVXK_ASxvQukila0lzxOny1JRS62ISWDgdk8BvPtEZFiFRrDEx_FYhig0MemaytST-G_PbJ_w08XqPOAPLeyj1c5E8OTn_eVpSke16AVCc4M3tYVVYZfkeoraWn0glZ3DZUIt1Url4WttGUCTEOge3OGFA7aBJj4QESJiPnOVtNihrDGivCCLjyvEpWIPfmw 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
-SPRINGBOOT_SECURITY 21:02:13.681 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
-SPRINGBOOT_SECURITY 21:02:13.682 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
-SPRINGBOOT_SECURITY 21:02:13.682 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 0 
-SPRINGBOOT_SECURITY 21:02:13.682 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
-SPRINGBOOT_SECURITY 21:02:13.682 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
-SPRINGBOOT_SECURITY 21:02:13.682 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
-SPRINGBOOT_SECURITY 21:02:13.682 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
-SPRINGBOOT_SECURITY 21:02:13.682 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [] LogFilter doFilter Body 
-SPRINGBOOT_SECURITY 21:02:13.683 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to delete Employee id : 1 
-SPRINGBOOT_SECURITY 21:02:13.685 INFO  jdbc.sqltiming : - SELECT "EMPLOYEE"."ID" AS "ID", "EMPLOYEE"."EMPNAME" AS "EMPNAME", "EMPLOYEE"."EMPMAIL" AS "EMPMAIL", "EMPLOYEE"."EMPTELNO" AS "EMPTELNO", "EMPLOYEE"."EMPDEPTNAME" AS "EMPDEPTNAME" FROM "EMPLOYEE" WHERE "EMPLOYEE"."ID" = 1\n {executed in 0 msec} 
-SPRINGBOOT_SECURITY 21:02:13.696 INFO  jdbc.resultsettable : - \n|---|--------|--------|---------|------------|\n|id |empname |empmail |emptelno |empdeptname |\n|---|--------|--------|---------|------------|\n|1  |1       |1       |1        |1           |\n|---|--------|--------|---------|------------|\n 
-SPRINGBOOT_SECURITY 21:02:13.703 INFO  jdbc.sqltiming : - DELETE FROM "EMPLOYEE" WHERE "EMPLOYEE"."ID" = 1\n {executed in 1 msec} 
-SPRINGBOOT_SECURITY 21:02:13.706 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/1] LogFilter doFilter End 
-SPRINGBOOT_SECURITY 21:04:30.476 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown initiated... 
-SPRINGBOOT_SECURITY 21:04:30.482 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown completed. 
-SPRINGBOOT_SECURITY 21:04:30.484 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter destroy() 
+SPRINGBOOT_SECURITY 12:13:36.741 INFO  org.hibernate.validator.internal.util.Version : - HV000001: Hibernate Validator 8.0.1.Final 
+SPRINGBOOT_SECURITY 12:13:36.800 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Starting ThirdprojectApplication using Java 17.0.9 with PID 25448 (C:\Users\chisu\Downloads\springboot_crud_security_keycloak\target\classes started by common in C:\Users\chisu\Downloads\springboot_crud_security_keycloak) 
+SPRINGBOOT_SECURITY 12:13:36.800 DEBUG com.kt.edu.thirdproject.ThirdprojectApplication : - Running with Spring Boot v3.2.1, Spring v6.1.2 
+SPRINGBOOT_SECURITY 12:13:36.801 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - The following 1 profile is active: "prd" 
+SPRINGBOOT_SECURITY 12:13:36.875 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+SPRINGBOOT_SECURITY 12:13:36.875 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+SPRINGBOOT_SECURITY 12:13:38.345 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+SPRINGBOOT_SECURITY 12:13:38.395 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Finished Spring Data repository scanning in 45 ms. Found 1 JDBC repository interface. 
+SPRINGBOOT_SECURITY 12:13:38.681 INFO  com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor : - Post-processing PropertySource instances 
+SPRINGBOOT_SECURITY 12:13:38.762 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy 
+SPRINGBOOT_SECURITY 12:13:38.762 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.762 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.763 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.763 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.763 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.763 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application-prd.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.763 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.763 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+SPRINGBOOT_SECURITY 12:13:38.808 INFO  com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter : - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+SPRINGBOOT_SECURITY 12:13:38.966 INFO  com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver : - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver 
+SPRINGBOOT_SECURITY 12:13:38.968 INFO  com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector : - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector 
+SPRINGBOOT_SECURITY 12:13:39.347 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat initialized with port 9080 (http) 
+SPRINGBOOT_SECURITY 12:13:39.361 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-9080"] 
+SPRINGBOOT_SECURITY 12:13:39.365 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
+SPRINGBOOT_SECURITY 12:13:39.365 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/10.1.17] 
+SPRINGBOOT_SECURITY 12:13:39.442 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
+SPRINGBOOT_SECURITY 12:13:39.444 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : - Root WebApplicationContext: initialization completed in 2566 ms 
+SPRINGBOOT_SECURITY 12:13:39.611 INFO  com.zaxxer.hikari.HikariDataSource : - HikariPool-1 - Starting... 
+SPRINGBOOT_SECURITY 12:13:39.769 INFO  com.zaxxer.hikari.pool.HikariPool : - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@32a0c199 
+SPRINGBOOT_SECURITY 12:13:39.770 INFO  com.zaxxer.hikari.HikariDataSource : - HikariPool-1 - Start completed. 
+SPRINGBOOT_SECURITY 12:13:39.788 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration : - H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://211.43.12.162:31381/edu?user=edu1&password=***' 
+SPRINGBOOT_SECURITY 12:13:39.887 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter init() 
+SPRINGBOOT_SECURITY 12:13:40.266 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : - LiveReload server is running on port 35729 
+SPRINGBOOT_SECURITY 12:13:41.032 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : - Exposing 1 endpoint(s) beneath base path '/actuator' 
+SPRINGBOOT_SECURITY 12:13:41.110 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f018230, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a9c79ef, org.springframework.security.web.context.SecurityContextHolderFilter@fabd4f5, org.springframework.security.web.header.HeaderWriterFilter@60a3cdc4, org.springframework.web.filter.CorsFilter@325a0a93, org.springframework.security.web.authentication.logout.LogoutFilter@3a961ff9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b4152be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@eb085ab, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7343cd91, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@445f8433, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ded703e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f569ff6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60c0d1cb, org.springframework.security.web.session.SessionManagementFilter@12e2aa8a, org.springframework.security.web.access.ExceptionTranslationFilter@42f349a2, org.springframework.security.web.access.intercept.AuthorizationFilter@673b19e0] 
+SPRINGBOOT_SECURITY 12:13:41.501 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-9080"] 
+SPRINGBOOT_SECURITY 12:13:41.532 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat started on port 9080 (http) with context path '' 
+SPRINGBOOT_SECURITY 12:13:41.548 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Started ThirdprojectApplication in 5.233 seconds (process running for 6.364) 
+SPRINGBOOT_SECURITY 12:14:01.568 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+SPRINGBOOT_SECURITY 12:14:01.568 INFO  org.springframework.web.servlet.DispatcherServlet : - Initializing Servlet 'dispatcherServlet' 
+SPRINGBOOT_SECURITY 12:14:01.568 INFO  org.springframework.web.servlet.DispatcherServlet : - Completed initialization in 0 ms 
+SPRINGBOOT_SECURITY 12:14:01.918 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
+SPRINGBOOT_SECURITY 12:14:01.968 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
+SPRINGBOOT_SECURITY 12:14:01.983 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cookie = JSESSIONID=C263BDDC0EB81300B8415975887D3859 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "Windows" 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMZU5yUEllV3F1S1RBQnU1NVdzMWlObmZiSEd4ZlJubzRuaUFUc21OUUFBIn0.eyJleHAiOjE3MDgzOTkxNDAsImlhdCI6MTcwODM5ODg0MCwiYXV0aF90aW1lIjoxNzA4Mzk4NDQzLCJqdGkiOiI3OTZjNGUwNy0wZjg3LTQxMjMtOWEyMS05ZmZmMWJhZGExZmQiLCJpc3MiOiJodHRwOi8vMjExLjQzLjEyLjE2MjozMDI5OC9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiIwYjU1ZWIzYy1lZjZmLTQ5ZDUtODdkNy1lZDNmMTQ5Zjg5NWQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiJjODU2NTc5MC02OTFkLTRhZmYtYTU5NS02NjhlNjBlZTVjY2MiLCJzZXNzaW9uX3N0YXRlIjoiYzQwZGRmNTgtNWFhMS00ODE0LWE3YTYtNWI5MTBjNjhmOWRlIiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlc291cmNlX2FjY2VzcyI6eyJlZHUtYXBwIjp7InJvbGVzIjpbIkVEVV9NQU5BR0VSIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImM0MGRkZjU4LTVhYTEtNDgxNC1hN2E2LTViOTEwYzY4ZjlkZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4ifQ.hVENAAaLDSJDcV-PG_g2Lb8JpZzhI2Drw0QOB54GV30QxYYse4kiAeDnQu7T_2WFwO9Obv_n2uOmm3N7VlNEm8Sq8XhSUEj5Wo42q2UD_nA67P-S2e6HAsvK1hkfkHxQSQgJFpIL3sVYeKDq55nINrKzjqtgA1qfly3ps2xrgmmrR67mOAv9gfncmhVQXzlAkuFKEEE7K1aHfIBx-s5L_yuv1Vth4gyA0w8vED7YPop7htM9Rk42NCibA_zmCCdw8sbUapkDKK4CbZEpvvNbw0y5BlfnnYM2qljNkNpHkpSnZ_UUHCWJTf1wq1lFG8dGmT2Z7ShSOqdFJoiQSMR23g 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+SPRINGBOOT_SECURITY 12:14:01.984 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+SPRINGBOOT_SECURITY 12:14:02.018 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to get all Employees 
+SPRINGBOOT_SECURITY 12:14:02.235 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
+SPRINGBOOT_SECURITY 12:14:07.910 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
+SPRINGBOOT_SECURITY 12:14:07.918 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
+SPRINGBOOT_SECURITY 12:14:07.919 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+SPRINGBOOT_SECURITY 12:14:07.919 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cookie = JSESSIONID=36409B5E2883D71C4BB14B7720AAE2C1 
+SPRINGBOOT_SECURITY 12:14:07.919 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+SPRINGBOOT_SECURITY 12:14:07.919 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+SPRINGBOOT_SECURITY 12:14:07.919 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
+SPRINGBOOT_SECURITY 12:14:07.920 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+SPRINGBOOT_SECURITY 12:14:07.920 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+SPRINGBOOT_SECURITY 12:14:07.920 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
+SPRINGBOOT_SECURITY 12:14:07.920 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
+SPRINGBOOT_SECURITY 12:14:07.920 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+SPRINGBOOT_SECURITY 12:14:07.920 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "Windows" 
+SPRINGBOOT_SECURITY 12:14:07.921 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
+SPRINGBOOT_SECURITY 12:14:07.921 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMZU5yUEllV3F1S1RBQnU1NVdzMWlObmZiSEd4ZlJubzRuaUFUc21OUUFBIn0.eyJleHAiOjE3MDgzOTkxNDAsImlhdCI6MTcwODM5ODg0MCwiYXV0aF90aW1lIjoxNzA4Mzk4NDQzLCJqdGkiOiI3OTZjNGUwNy0wZjg3LTQxMjMtOWEyMS05ZmZmMWJhZGExZmQiLCJpc3MiOiJodHRwOi8vMjExLjQzLjEyLjE2MjozMDI5OC9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiIwYjU1ZWIzYy1lZjZmLTQ5ZDUtODdkNy1lZDNmMTQ5Zjg5NWQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiJjODU2NTc5MC02OTFkLTRhZmYtYTU5NS02NjhlNjBlZTVjY2MiLCJzZXNzaW9uX3N0YXRlIjoiYzQwZGRmNTgtNWFhMS00ODE0LWE3YTYtNWI5MTBjNjhmOWRlIiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlc291cmNlX2FjY2VzcyI6eyJlZHUtYXBwIjp7InJvbGVzIjpbIkVEVV9NQU5BR0VSIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImM0MGRkZjU4LTVhYTEtNDgxNC1hN2E2LTViOTEwYzY4ZjlkZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4ifQ.hVENAAaLDSJDcV-PG_g2Lb8JpZzhI2Drw0QOB54GV30QxYYse4kiAeDnQu7T_2WFwO9Obv_n2uOmm3N7VlNEm8Sq8XhSUEj5Wo42q2UD_nA67P-S2e6HAsvK1hkfkHxQSQgJFpIL3sVYeKDq55nINrKzjqtgA1qfly3ps2xrgmmrR67mOAv9gfncmhVQXzlAkuFKEEE7K1aHfIBx-s5L_yuv1Vth4gyA0w8vED7YPop7htM9Rk42NCibA_zmCCdw8sbUapkDKK4CbZEpvvNbw0y5BlfnnYM2qljNkNpHkpSnZ_UUHCWJTf1wq1lFG8dGmT2Z7ShSOqdFJoiQSMR23g 
+SPRINGBOOT_SECURITY 12:14:07.921 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+SPRINGBOOT_SECURITY 12:14:07.921 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-type = application/json 
+SPRINGBOOT_SECURITY 12:14:07.921 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
+SPRINGBOOT_SECURITY 12:14:07.921 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 62 
+SPRINGBOOT_SECURITY 12:14:07.922 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
+SPRINGBOOT_SECURITY 12:14:07.922 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
+SPRINGBOOT_SECURITY 12:14:07.922 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+SPRINGBOOT_SECURITY 12:14:07.922 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+SPRINGBOOT_SECURITY 12:14:07.923 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [{"empName":"5","empDeptName":"5","empTelNo":"5","empMail":"5"}] LogFilter doFilter Body 
+SPRINGBOOT_SECURITY 12:14:07.987 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to create Employee : EmployeeEntity(id=null, empName=5, empDeptName=5, empTelNo=5, empMail=5, isNew=false) 
+SPRINGBOOT_SECURITY 12:14:08.002 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Active Springboot Profile : prd 
+SPRINGBOOT_SECURITY 12:14:08.086 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
+SPRINGBOOT_SECURITY 12:15:11.419 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
+SPRINGBOOT_SECURITY 12:15:11.420 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/1] LogFilter doFilter Start 
+SPRINGBOOT_SECURITY 12:15:11.420 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+SPRINGBOOT_SECURITY 12:15:11.420 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cookie = JSESSIONID=62AEAEE02E391E8A447D15FED2E9F1F6 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "Windows" 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
+SPRINGBOOT_SECURITY 12:15:11.421 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMZU5yUEllV3F1S1RBQnU1NVdzMWlObmZiSEd4ZlJubzRuaUFUc21OUUFBIn0.eyJleHAiOjE3MDgzOTkxNDAsImlhdCI6MTcwODM5ODg0MCwiYXV0aF90aW1lIjoxNzA4Mzk4NDQzLCJqdGkiOiI3OTZjNGUwNy0wZjg3LTQxMjMtOWEyMS05ZmZmMWJhZGExZmQiLCJpc3MiOiJodHRwOi8vMjExLjQzLjEyLjE2MjozMDI5OC9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiIwYjU1ZWIzYy1lZjZmLTQ5ZDUtODdkNy1lZDNmMTQ5Zjg5NWQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiJjODU2NTc5MC02OTFkLTRhZmYtYTU5NS02NjhlNjBlZTVjY2MiLCJzZXNzaW9uX3N0YXRlIjoiYzQwZGRmNTgtNWFhMS00ODE0LWE3YTYtNWI5MTBjNjhmOWRlIiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlc291cmNlX2FjY2VzcyI6eyJlZHUtYXBwIjp7InJvbGVzIjpbIkVEVV9NQU5BR0VSIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImM0MGRkZjU4LTVhYTEtNDgxNC1hN2E2LTViOTEwYzY4ZjlkZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4ifQ.hVENAAaLDSJDcV-PG_g2Lb8JpZzhI2Drw0QOB54GV30QxYYse4kiAeDnQu7T_2WFwO9Obv_n2uOmm3N7VlNEm8Sq8XhSUEj5Wo42q2UD_nA67P-S2e6HAsvK1hkfkHxQSQgJFpIL3sVYeKDq55nINrKzjqtgA1qfly3ps2xrgmmrR67mOAv9gfncmhVQXzlAkuFKEEE7K1aHfIBx-s5L_yuv1Vth4gyA0w8vED7YPop7htM9Rk42NCibA_zmCCdw8sbUapkDKK4CbZEpvvNbw0y5BlfnnYM2qljNkNpHkpSnZ_UUHCWJTf1wq1lFG8dGmT2Z7ShSOqdFJoiQSMR23g 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 0 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+SPRINGBOOT_SECURITY 12:15:11.422 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [] LogFilter doFilter Body 
+SPRINGBOOT_SECURITY 12:15:11.436 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to delete Employee id : 1 
+SPRINGBOOT_SECURITY 12:15:11.496 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/1] LogFilter doFilter End 
+SPRINGBOOT_SECURITY 12:15:13.852 INFO  com.kt.edu.thirdproject.common.service.JwtAuthConverter : - jwt claimName 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/2002] LogFilter doFilter Start 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cookie = JSESSIONID=3FE4798E9BD9CF79D2E074D378B8C912 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:3000/employees 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+SPRINGBOOT_SECURITY 12:15:13.854 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-origin 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:3000 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "Windows" 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMZU5yUEllV3F1S1RBQnU1NVdzMWlObmZiSEd4ZlJubzRuaUFUc21OUUFBIn0.eyJleHAiOjE3MDgzOTkxNDAsImlhdCI6MTcwODM5ODg0MCwiYXV0aF90aW1lIjoxNzA4Mzk4NDQzLCJqdGkiOiI3OTZjNGUwNy0wZjg3LTQxMjMtOWEyMS05ZmZmMWJhZGExZmQiLCJpc3MiOiJodHRwOi8vMjExLjQzLjEyLjE2MjozMDI5OC9yZWFsbXMvZW1wbG95ZWUtc2VydmljZXMiLCJzdWIiOiIwYjU1ZWIzYy1lZjZmLTQ5ZDUtODdkNy1lZDNmMTQ5Zjg5NWQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlZHUtYXBwIiwibm9uY2UiOiJjODU2NTc5MC02OTFkLTRhZmYtYTU5NS02NjhlNjBlZTVjY2MiLCJzZXNzaW9uX3N0YXRlIjoiYzQwZGRmNTgtNWFhMS00ODE0LWE3YTYtNWI5MTBjNjhmOWRlIiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlc291cmNlX2FjY2VzcyI6eyJlZHUtYXBwIjp7InJvbGVzIjpbIkVEVV9NQU5BR0VSIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImM0MGRkZjU4LTVhYTEtNDgxNC1hN2E2LTViOTEwYzY4ZjlkZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4ifQ.hVENAAaLDSJDcV-PG_g2Lb8JpZzhI2Drw0QOB54GV30QxYYse4kiAeDnQu7T_2WFwO9Obv_n2uOmm3N7VlNEm8Sq8XhSUEj5Wo42q2UD_nA67P-S2e6HAsvK1hkfkHxQSQgJFpIL3sVYeKDq55nINrKzjqtgA1qfly3ps2xrgmmrR67mOAv9gfncmhVQXzlAkuFKEEE7K1aHfIBx-s5L_yuv1Vth4gyA0w8vED7YPop7htM9Rk42NCibA_zmCCdw8sbUapkDKK4CbZEpvvNbw0y5BlfnnYM2qljNkNpHkpSnZ_UUHCWJTf1wq1lFG8dGmT2Z7ShSOqdFJoiQSMR23g 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121" 
+SPRINGBOOT_SECURITY 12:15:13.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 0 
+SPRINGBOOT_SECURITY 12:15:13.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = close 
+SPRINGBOOT_SECURITY 12:15:13.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:9080 
+SPRINGBOOT_SECURITY 12:15:13.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+SPRINGBOOT_SECURITY 12:15:13.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+SPRINGBOOT_SECURITY 12:15:13.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [] LogFilter doFilter Body 
+SPRINGBOOT_SECURITY 12:15:13.869 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to delete Employee id : 2002 
+SPRINGBOOT_SECURITY 12:15:13.885 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/2002] LogFilter doFilter End 

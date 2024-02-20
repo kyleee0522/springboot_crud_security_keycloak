@@ -2,24 +2,24 @@
 ### prd
 ##############
 server:
-  port: 8080
+  port: 9080
   servlet:
     context-path: /
-  tomcat:
-    connection-timeout: 5s
-    max-connections: 1000
-    accept-count: 20
-    threads:
-      max: 200
+#  tomcat:
+#    connection-timeout: 5s
+#    max-connections: 1000
+#    accept-count: 20
+#    threads:
+#      max: 200
 spring:
   datasource:
     platform: mariadb
     #driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://db:3306/edu
-    username: edu
+    url: jdbc:mariadb://211.43.12.162:31381/edu
+    username: edu1
     #password: caravan
-    password: ENC(hk5/B+52K9XaD+BqzpFaHQ==)
+    password: New1234!
 #    hikari:
 #      pool-name: hikari-cp
 #      maximum-pool-size: 30
