@@ -37,7 +37,7 @@ app:
   # cors:
   #  allowed-origins: http://localhost:3000
   keycloak:
-    server : http://211.43.12.162:30298 # http://211.252.87.34:40007
+    server : https://keycloak.apps.okd4.ktdemo.duckdns.org # http://211.43.12.162:30298 # http://211.252.87.34:40007
   #  keycloak:
   #    auth-server-url: ${KEYCLOAK_SERVER_URL:http://localhost:8080/auth}
   #    realm: ${KEYCLOAK_REALM:spring-boot-blueprint}
