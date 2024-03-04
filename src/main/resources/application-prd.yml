@@ -40,3 +40,18 @@ springdoc:
 logging:
   level:
     com.kt.edu: trace
+
+############ helath check를 위해서 열어줘야해 ##############
+# spring boot - actuator expose
+management:
+  endpoints:
+    health:
+      show-details: always
+    loggers:
+      enabled: true
+    prometheus:
+      enabled: true
+    web:
+      exposure:
+        include: health,prometheus,loggers,metrics,caches,beans
+#        include: "*"

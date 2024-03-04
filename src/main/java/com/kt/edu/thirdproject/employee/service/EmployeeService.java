@@ -1,5 +1,6 @@
 package com.kt.edu.thirdproject.employee.service;
 
+import com.kt.edu.thirdproject.common.aop.Ktedu;
 import com.kt.edu.thirdproject.employee.domain.EmployeeEntity;
 import com.kt.edu.thirdproject.common.exception.ResourceNotFoundException;
 import com.kt.edu.thirdproject.employee.repository.EmployeeRepository;
@@ -61,6 +62,7 @@ public class EmployeeService {
         return this.employeeRepository.save(employeeEntity);
     }
 
+    @Ktedu
     public EmployeeEntity update(Long id,EmployeeEntity employeeEntity) {
         log.info("Request to update Employee : " +  employeeEntity);
         EmployeeEntity employee = employeeRepository.findById(id)
